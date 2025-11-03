@@ -16,7 +16,7 @@ public class H3_main {
             fix = max;
             istVoll = true;
         }
-        System.out.println("Belegte Plätze: " + fix);
+        System.out.println("Belegte Plätze: " + fix + " von " + max);
         System.out.println("Personen auf der Warteliste: " + wartend);
         System.out.println("Stadion Voll? " + istVoll);
     }
