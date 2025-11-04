@@ -6,14 +6,11 @@ public class P1_main {
         if (wuerfel == 2) {
             System.out.println("Leider Verloren");
         }
-        if (wuerfel == 4) {
+        if (wuerfel == 1 | wuerfel == 4) {
             System.out.println("Gewonnen!");
         }
         if (wuerfel == 5) {
             System.out.println("Unentschieden");
-        }
-        if (wuerfel == 1) {
-            System.out.println("Gewonnen!");
         }
     }
 }
