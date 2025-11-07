@@ -2,9 +2,9 @@ package h3;
 
 public class H3_main {
     public static void main(String[] args) {
-        int max = 8000;
-        int fix = 7832;
-        int wartend = 450;
+        int max = 5;
+        int fix = 2;
+        int wartend = 2;
         boolean istVoll;
         int freiePlatze = max - fix;
         if (freiePlatze == 0){
@@ -17,6 +17,8 @@ public class H3_main {
             istVoll = true;
         }
         if(wartend < 0){
+            istVoll = false;
+            fix = max - Math.abs(wartend);
             wartend = 0;
         }
         System.out.println("Belegte Plätze: " + fix + " von " + max);
